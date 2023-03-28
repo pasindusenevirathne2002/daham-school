@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    .wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex; 
+    }
+    .bg-1{
+        flex: 1;
+        background-color: rgb(180, 243, 175);
+    }
+    .bg-2{
+        flex: 1;
+        background-color: rgb(163, 236, 240);
+    }
+    .about-container{
+        width: 85%;
+        min-height: 80vh;
+        position: absolute;
+        background-color: white;
+        box-shadow: 24px 24px 30px #6d8dad;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+        border-radius: 5px;
+    }
+    .image-container{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container img {
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .text-container{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size: 22px;
+    }
+    .text-container h1{
+        font-size: 70px;
+        padding: 20px 0px;
+    }
+    .text-container a{
+        text-decoration: none;
+        padding: 12px;
+        margin: 50px 0px;
+        background-color: rebeccapurple;
+        border: 2px solid transparent;
+        color: white;
+        border-radius: 5px;
+        transition: .3s all ease;
+    }
+    .text-container a:hover{
+        background-color: transparent;
+        color: black;
+        border: 2px solid rebeccapurple;
+    }
+    @media screen and (max-width: 1600px){
+        .about-container{
+            width: 90%;
+        }
+        .image-container img{
+            width: 400px;
+            height: 400px;
+        }
+        .text-container h1{
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width: 1100px){
+        .about-container{
+            flex-direction: column;
+        }
+        .image-container img{
+            width: 300px;
+            height: 300px;
+            background-image: url(new1.jpg);
+        }
+        .text-container {
+            align-items: center;
+        }
+        button{
+    padding: 15px 40px;
+    border: none;
+    background-color:  #06ff0a;
+    font-size: 20px;
+    margin: 30px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: .5s all ease-in-out;
+    border: 2px solid transparent;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #ffff06;
+    color: black
+    ;
+}
+    }</style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="background-container">
+            <div class="bg-1"></div>
+            <div class="bg-2"></div>
+    
+        </div>
+        <div class="about-container">
+            
+            <div class="image-container">
+                <img src="new1.jpg" alt="">
+                
+            </div>
+
+            <div class="text-container">
+                <h1>අප ගැන </h1>
+                <p>දහම් පාසලක් වශයෙන් පුරා දශක 7ක් පුරා රටට දැහැමි දරුවන් දායාද කල  <br> අප මෙතෙක් ආ ගමන ඉතා මනරම් විය. බොහෝ බාධක කම් කටොලු මැද රට පුරා විහිදුනු අපගේ දුවා දරුවන් ධාර්මික අයුරින් කටයුතු කිරීම දුටු විට අපට ඇති වන්නේ ඉමහත් සතුටකි. ඔබට දහම් පාසල් ලබාගැනීමට නම් "Read more" වෙත පිවිසෙන්න.</p>
+                <a href="">Read More</a> 
+                <BUTTON" value="Homepage" onclick="window.location.href='file:///C:/wamp64/www/dahamschool/dschool.html'">Homepage</BUTTON>
+            </div>
+            
+        </div>
+    </div>
+    
+
+</body>
+</html>

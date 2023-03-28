@@ -1,0 +1,44 @@
+.multi-select > div:last-child{
+    transition:all 0.4s;
+}
+
+
+.multi-select > div:last-child > div{
+    display:flex;
+    align-items:center;
+    gap:0 10px;
+    transition:0.2s;
+    font-weight:450;
+    font-size:18px;
+    transition: 1s;
+}
+
+
+.multi-select > div:last-child input[type="checkbox"]{
+    width:15px;
+    aspect-ratio:1/1;
+}
+
+
+.not-selected{
+    overflow:hidden;
+    height:0 !important;
+}
+
+
+.not-selected > div{
+    height:0 !important;
+    opacity:0;
+}
+
+
+/* media quries */
+@media (max-width:1230px)
+{
+    .multi-select > div:last-child > div{
+        font-size:14px;
+    }
+}
+
+
+
